@@ -15,6 +15,17 @@
 
   <tbody>
 
+    @foreach (var game in games) {
+      <tr>
+        <td>@game.Id</td>
+        <td>@game.Name</td>
+        <td>@game.Genre</td>
+        <td>@game.Price</td>
+        <td>@game.ReleaseDate</td>
+        <td></td>
+        </tr>
+    }
+
   </tbody>
 </table>
 @code {
